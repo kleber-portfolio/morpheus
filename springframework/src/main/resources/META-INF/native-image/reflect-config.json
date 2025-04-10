@@ -1,0 +1,38 @@
+[
+  {
+    "name": "io.github.mrspock182.messaging.dto.PersonMessagingDto",
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true,
+    "allDeclaredFields": true
+  },
+  {
+    "name": "io.github.mrspock182.messaging.PersonListener",
+    "methods": [
+      {
+        "name": "listener",
+        "parameterTypes": [
+          "io.github.mrspock182.messaging.dto.PersonMessagingDto"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "io.github.mrspock182.messaging.dto.ChosenPersonMessagingDto",
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true,
+    "allDeclaredFields": true
+  },
+  {
+    "name": "io.github.mrspock182.repository.dto.PersonOrmDynamoDB",
+    "allPublicConstructors": true,
+    "allPublicMethods": true,
+    "allPublicFields": true
+  },
+  {
+    "name": "java.time.LocalDate",
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true,
+    "allDeclaredFields": true
+  }
+]
+

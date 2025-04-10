@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /morpheus
+
+spring:
+  application:
+    name: morpheus
+  cloud:
+    aws:
+      region:
+        static: ${AWS_CLOUD_REGION}
+      credentials:
+        access-key: ${AWS_CLOUD_ACCESS_KEY}
+        secret-key: ${AWS_CLOUD_SECRET_KEY}
+      dynamodb:
+        person-table: ${AWS_CLOUD_DYNAMO_PERSON}
+      sqs:
+        endpoint: ${AWS_CLOUD_SQS_PERSON_ENDPOINT}
+        listener:
+          acknowledgment-mode: AUTO
+
+app:
+  queues:
+    person: ${AWS_CLOUD_SQS_PERSON_NAME}
+    chosen-person: ${AWS_CLOUD_SQS_CHOSEN_PERSON}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info

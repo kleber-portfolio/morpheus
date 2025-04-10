@@ -1,0 +1,7 @@
+{
+  "resources": [
+    {
+      "pattern": "io/awspring/cloud/core/SpringCloudClientConfiguration.properties"
+    }
+  ]
+}
